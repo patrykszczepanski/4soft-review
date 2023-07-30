@@ -1,11 +1,10 @@
 <?php
 
-namespace Tests;
+namespace Tests\Integration;
 
-use App\Solution1\UnixEOLConverterDecorator;
-use PHPUnit\Framework\TestCase;
-
+use App\UnixEOLConverterDecorator;
 use Exception;
+use PHPUnit\Framework\TestCase;
 
 class UnixEOLConverterDecoratorTest extends TestCase
 {
@@ -14,7 +13,7 @@ class UnixEOLConverterDecoratorTest extends TestCase
      */
     public function testTransformUnixLine()
     {
-        // Define a test text file content with newlines
+        // Define a text file content and expected opt from it
         $testContent = "Line 1\r\nLine 2\r\nLine 3";
         $expectedLines = ['Line 1\n', 'Line 2\n', 'Line 3'];
 

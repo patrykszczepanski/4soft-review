@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Solution1;
+namespace App;
 
 class UnixEOLConverterDecorator extends TextFileReader
 {
